@@ -10,7 +10,7 @@ export default class App extends Component {
   };
 
   getItems() {
-    fetch("http://localhost:1234/books")
+    fetch("http://196.117.115.149:1234/books")
       .then(response => response.json())
       .then(items => {
         this.setState({ items });
